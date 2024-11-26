@@ -1,0 +1,109 @@
+{
+  "easycom": {
+    "autoscan": true,
+    // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    },
+    {
+      "path": "pages/extend/extend",
+      "style": {
+        "navigationBarTitleText": "扩展",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/template/template",
+      "style": {
+        "navigationBarTitleText": "模板",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/list",
+      "pages": [
+        {
+          "path": "navbar/navbar",
+          "style": {
+            "navigationBarTitleText": "自定义导航栏",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+        	"path" : "leftnav/leftnav",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "侧边导航索引"
+        	}
+        },
+        {
+        	"path" : "sticky/sticky",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "粘性布局"
+        	}
+        },
+        {
+        	"path" : "selectCity/selectCity",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "选择城市"
+        	}
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#4A88FB",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/image/tabBar/home.png",
+        "selectedIconPath": "static/image/tabBar/home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/extend/extend",
+        "iconPath": "static/image/tabBar/serve.png",
+        "selectedIconPath": "static/image/tabBar/serve-select.png",
+        "text": "扩展"
+      },
+      {
+        "pagePath": "pages/template/template",
+        "iconPath": "static/image/tabBar/template.png",
+        "selectedIconPath": "static/image/tabBar/template-select.png",
+        "text": "模板"
+      }
+    ]
+  }
+}
