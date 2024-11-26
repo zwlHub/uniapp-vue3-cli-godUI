@@ -243,10 +243,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//宽度转换vw
-@function vww($number) {
-	@return ($number / 375) * 750 + rpx;
-}
 
 view {
 	box-sizing: border-box;
@@ -255,23 +251,21 @@ view {
 .city-serach {
 	width: 100%;
 	color: #4a4a4a;
-	padding: 0 vww(10);
+	padding: 0 20rpx;
 
 	&-input {
-		margin: vww(10) 0;
-		height: vww(40);
-		line-height: vww(40);
-		font-size: vww(14);
-		padding: 0 vww(5);
-		border: 1px solid #4d8cfd;
-		border-radius: 20px;
+		margin: 40rpx 0;
+		height: 80rpx;
+		line-height: 80rpx;
+		font-size: 28rpx;
+		padding: 0 10rpx;
+		border: 1rpx solid #4d8cfd;
+		border-radius: 40rpx;
 	}
 }
 
 .city-select-main {
 	position: relative;
-	// overflow: scroll;
-	// -webkit-overflow-scrolling: touch;
 	width: 100%;
 	height: 100%;
 	background: #f8f8f8;
@@ -285,16 +279,16 @@ view {
 
 	// 热门城市
 	.hot-title {
-		padding-left: vww(23);
+		padding-left: 46rpx;
 		width: 100vw;
-		font-size: 14px;
-		line-height: vww(40);
+		font-size: 28rpx;
+		line-height: 80rpx;
 		color: #9b9b9b;
 	}
 
 	.hot-city {
-		padding-left: vww(12);
-		// padding-right: vww(20);
+		padding-left: 24rpx;
+		padding-right: 5rpx;
 		overflow: hidden;
 		width: 100vw;
 		display: grid;
@@ -302,20 +296,20 @@ view {
 
 		.hot-item {
 			float: left;
-			padding: 0 vww(5);
-			margin-right: vww(16);
-			margin-bottom: vww(6);
+			padding: 0 10rpx;
+			margin-right: 32rpx;
+			margin-bottom: 12rpx;
 			overflow: hidden;
-			width: vww(100);
-			height: vww(31);
-			font-size: 14px;
+			width: 200rpx;
+			height: 62rpx;
+			font-size: 28rpx;
 			text-align: center;
 
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
 			-webkit-line-clamp: 1;
 
-			line-height: vww(31);
+			line-height: 62rpx;
 			color: #4a4a4a;
 			background: #fff;
 			border: 1px solid #ebebf0;
@@ -333,17 +327,17 @@ view {
 
 	.citys {
 		.citys-row {
-			padding-left: vww(18);
+			padding-left: 36rpx;
 			width: 100%;
-			font-size: 14px;
+			font-size: 28rpx;
 			background: #fff;
 
 			.citys-item-letter {
-				margin-left: vww(-18);
-				padding-left: vww(18);
-				margin-top: -1px;
+				margin-left: -36rpx;
+				padding-left: 36rpx;
+				margin-top: -2rpx;
 				width: 100vw;
-				line-height: vww(30);
+				line-height: 60rpx;
 				color: #9b9b9b;
 				background: #f8f8f8;
 				border-top: none;
@@ -351,7 +345,7 @@ view {
 
 			.citys-item {
 				width: 100%;
-				line-height: vww(50);
+				line-height: 100rpx;
 				color: #4a4a4a;
 				border-bottom: 1px solid #ebebf0;
 
@@ -368,19 +362,19 @@ view {
 		top: 0;
 		z-index: 999;
 		display: flex;
-		width: vww(20);
+		width: 40rpx;
 		height: 100%;
 		text-align: center;
 
 		.city-indexs {
-			width: vww(20);
+			width: 40rpx;
 			text-align: center;
 			vertical-align: middle;
 			align-self: center;
 
 			.city-indexs-text {
-				margin-bottom: vww(10);
-				width: vww(20);
+				margin-bottom: 20rpx;
+				width: 40rpx;
 				font-size: 12px;
 				color: #4d8cfd;
 

@@ -20,7 +20,7 @@ const comData = [
 			},
 			{
 			    comTitle: '选择城市',
-			    comIcon: 'icon-juzhong',
+			    comIcon: 'icon-chengshi_3',
 			    url: '/pages/list/selectCity/selectCity'
 			}
         ]
