@@ -10,13 +10,13 @@
     <up-sticky id="sticky1">
       <view class="card sticky-view1">滚动页面我会被自动吸顶</view>
     </up-sticky>
-    <view class="occupancy" v-for="item in 3"></view>
+    <view class="occupancy" v-for="(item,index) in 3" :key="index"></view>
     <up-sticky :offset-top="50">
       <view class="card sticky-view2"
         >我会被吸附在上面元素的后面，这对布局非常有用</view
       >
     </up-sticky>
-    <view class="occupancy" v-for="item in 10"></view>
+    <view class="occupancy" v-for="(item,index) in 10" :key="index"></view>
   </view>
 </template>
 

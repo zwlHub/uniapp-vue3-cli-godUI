@@ -12,7 +12,7 @@
 			<!-- 热门城市 -->
 			<view class="hot-title" v-if="hotCity.length > 0 && !serachCity">热门城市</view>
 			<view class="hot-city" v-if="hotCity.length > 0 && !serachCity">
-				<view v-for="(item, index) in hotCity">
+				<view v-for="(item, index) in hotCity" :key="index">
 					<view :key="index" @click="cityTrigger(item, 'hot')" class="hot-item">{{ item[formatName] }}</view>
 				</view>
 			</view>

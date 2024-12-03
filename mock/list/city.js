@@ -1,4 +1,4 @@
-// 只列举了部分城市
+// 模拟部分城市
 export const city = [
     { id: 0, title: "阿拉尔" },
     { id: 1, title: "北京" },

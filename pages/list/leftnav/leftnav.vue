@@ -1,86 +1,107 @@
 <template>
-	<view class="container">
-		<easy-scroll class="easy-scroll" v-if="navList.length > 0" :list="navList" itemKey="id"
-			navKey="label" :topDistance="20">
-			<view class="list" v-for="(item, listIndex) in navList" :key="listIndex" :id="'scroll-item-' + listIndex">
-				<view class="title"><text>{{ item.label }}</text></view>
-				<view class="item-container">
-					<view class="item" v-for="(item, index) in item.itemList" @click="clickItem(item.id)" :key="index">
-						<image class="image" src="@/static/logo.png" mode=""></image>
-						<view class="name">{{ item.name }}</view>
-					</view>
-				</view>
-			</view>
-		</easy-scroll>
-	</view>
+  <view class="container">
+    <easy-scroll
+	    ref="scrollRef"
+      class="easy-scroll"
+      v-if="navList.length > 0"
+      :list="navList"
+      itemKey="id"
+      navKey="label"
+      :topDistance="20"
+    >
+      <view
+        class="list"
+        v-for="(item, listIndex) in navList"
+        :key="listIndex"
+        :id="'scroll-item-' + listIndex"
+      >
+        <view class="title"
+          ><text>{{ item.label }}</text></view
+        >
+        <view class="item-container">
+          <view
+            class="item"
+            v-for="(item, index) in item.itemList"
+            @click="clickItem(item.id)"
+            :key="index"
+          >
+            <image class="image" src="@/static/logo.png" mode=""></image>
+            <view class="name">{{ item.name }}</view>
+          </view>
+        </view>
+      </view>
+    </easy-scroll>
+  </view>
 </template>
 
 <script setup>
-	import {
-		ref
-	} from 'vue'
-	import {
-		navList
-	} from '@/mock/list/leftNav.js'
+import { ref, getCurrentInstance } from "vue";
+import { onReady } from "@dcloudio/uni-app";
+import { navList } from "@/mock/list/leftNav.js";
+const scrollRef = ref(null)
+onReady(() => {
+	scrollRef.value.init()
+})
 
-	const clickItem = (id) => {
-		uni.showToast({
-			title: id
-		})
-	}
+const clickItem = (id) => {
+  uni.showToast({
+    title: id,
+  });
+};
 </script>
 
 <style lang="scss" scoped>
-	.container {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.easy-scroll {
-		height: calc(100% - var(--status-bar-height));
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-		.title {
-			margin-top: 20rpx;
-			text-align: left;
-			font-family: PingFangSC, PingFang SC;
-			font-weight: 500;
-			font-size: 28rpx;
-			color: #333333;
-		}
+.easy-scroll {
+  // height: calc(100% - var(--status-bar-height));
+  height: 100%;
 
-		.item-container {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
+  .title {
+    margin-top: 20rpx;
+    text-align: left;
+    font-family: PingFangSC, PingFang SC;
+    font-weight: 500;
+    font-size: 28rpx;
+    color: #333333;
+  }
 
-			.item {
-				width: 50%;
-				text-align: center;
-				padding-top: 24rpx;
+  .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-				.image {
-					width: 263rpx;
-					height: 166rpx;
-					margin-bottom: 12rpx;
-					border-radius: 4rpx;
-				}
+    .item {
+      width: 50%;
+      text-align: center;
+      padding-top: 24rpx;
 
-				.name {
-					font-family: PingFang-SC, PingFang-SC;
-					font-size: 24rpx;
-					color: #303030;
-				}
-			}
-		}
-	}
+      .image {
+        width: 263rpx;
+        height: 166rpx;
+        margin-bottom: 12rpx;
+        border-radius: 4rpx;
+      }
+
+      .name {
+        font-family: PingFang-SC, PingFang-SC;
+        font-size: 24rpx;
+        color: #303030;
+      }
+    }
+  }
+}
 </style>
 <style>
-	uni-page-body,
-	page {
-		height: 100%;
-		width: 100%;
-		background: #fff;
-	}
+uni-page-body,
+page {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
 </style>

@@ -54,7 +54,7 @@
         	"path" : "leftnav/leftnav",
         	"style" : 
         	{
-        		"navigationBarTitleText" : "侧边导航索引"
+        		"navigationBarTitleText" : "侧边栏"
         	}
         },
         {
@@ -69,6 +69,13 @@
         	"style" : 
         	{
         		"navigationBarTitleText" : "选择城市"
+        	}
+        },
+        {
+        	"path" : "listFilter/listFilter",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "列表筛选"
         	}
         }
       ]

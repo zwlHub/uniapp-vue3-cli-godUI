@@ -12,7 +12,6 @@
 </template>
 
 <script setup>
-import citySelect from "@/components/city-select/city-select.vue";
 import { city } from '@/mock/list/city.js'
 import { ref } from "vue";
 const formatName = ref("title");

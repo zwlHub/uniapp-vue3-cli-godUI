@@ -22,6 +22,11 @@ const comData = [
 			    comTitle: '选择城市',
 			    comIcon: 'icon-chengshi_3',
 			    url: '/pages/list/selectCity/selectCity'
+			},
+			{
+			    comTitle: '列表筛选',
+			    comIcon: 'icon-daohang',
+			    url: '/pages/list/listFilter/listFilter'
 			}
         ]
     }
