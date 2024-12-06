@@ -1,15 +1,13 @@
 //白天模式
 .theme-light-page {
-    background-color: #FFF !important;
+    background-color: #f8f8f8;
 
-    .theme-color {
-        color: #333 !important;
+    .theme-card {
+        background: #FFF;
+        color: #000;
     }
-    .theme-block {
-        background-color: #333 !important;
-        
-        .color {
-            color: #fff !important;
-        }
+
+    .theme-text-color {
+        color: #FFF;
     }
 }

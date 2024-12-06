@@ -36,6 +36,16 @@
         "navigationBarTitleText": "模板",
         "enablePullDownRefresh": false
       }
+    },
+    {
+      "path" : "pages/theme/theme",
+      "style" :
+      {
+        "navigationBarTitleText" : "主题配置",
+        "navigationBarBackgroundColor": "#FFF",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
     }
   ],
   "subPackages": [
@@ -78,6 +88,7 @@
         		"navigationBarTitleText" : "列表筛选"
         	}
         }
+
       ]
     }
   ],
@@ -95,21 +106,27 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "iconPath": "static/image/tabBar/home.png",
-        "selectedIconPath": "static/image/tabBar/home-select.png",
+        "iconPath": "/static/image/tabBar/home.png",
+        "selectedIconPath": "/static/image/tabBar/home-select.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/extend/extend",
-        "iconPath": "static/image/tabBar/serve.png",
-        "selectedIconPath": "static/image/tabBar/serve-select.png",
+        "iconPath": "/static/image/tabBar/serve.png",
+        "selectedIconPath": "/static/image/tabBar/serve-select.png",
         "text": "扩展"
       },
       {
         "pagePath": "pages/template/template",
-        "iconPath": "static/image/tabBar/template.png",
-        "selectedIconPath": "static/image/tabBar/template-select.png",
+        "iconPath": "/static/image/tabBar/template.png",
+        "selectedIconPath": "/static/image/tabBar/template-select.png",
         "text": "模板"
+      },
+      {
+        "pagePath": "pages/theme/theme",
+        "iconPath": "/static/image/tabBar/template.png",
+        "selectedIconPath": "/static/image/tabBar/template-select.png",
+        "text": "主题"
       }
     ]
   }

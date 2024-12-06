@@ -16,25 +16,37 @@
       </view>
     </scroll-view>
   </view>
+  <yuni-tabbar :current="0"></yuni-tabbar>
 </template>
 
 <script setup>
 import {ref, onMounted} from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
 import { comData } from './data'
 
 
 function toPage(url){
-  uni.navigateTo({
-    url
-  })
+  if(url === '/pages/theme/theme') {
+    uni.switchTab({
+      url
+    })
+  } else {
+    uni.navigateTo({
+      url
+    })
+  }
+
 }
+
+onLoad(() => {
+  uni.hideTabBar()
+})
 </script>
 
 
 <style scoped lang="scss">
 .home-container {
   width: 100%;
-  height: 100%;
   padding: 10rpx 20rpx;
   box-sizing: border-box;
   display: flex;

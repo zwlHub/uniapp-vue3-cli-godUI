@@ -6,7 +6,7 @@ import { config } from "@/config/config.js"; //appCode,clientId,BASEURL
 import { useTokenStore } from "@/store/token.js";
 import { useMainStore } from "@/store/index.js";
 import { useUserStore } from "@/store/user.js";
-import { useTabBerStore } from "@/store/tabBer.js";
+import { useTabBarStore } from "@/store/tabBer.js";
 import kvStore from "@/common/store/uniKVStore";
 import pinia from "@/store/store.js";
 let server_url = config.BASEURL;
@@ -105,7 +105,7 @@ export async function request(options = {}) {
         } else {
           // refreshToken过期，重新登录
           rejected("无权限");
-          const tabBarStore = useTabBerStore();
+          const tabBarStore = useTabBarStore();
           const userStore = useUserStore();
           uni.showToast({
             title: "登录信息已失效，请重新登录",
@@ -226,7 +226,7 @@ export async function uploadFile(options = {}) {
         } else {
           // refreshToken过期，重新登录
           rejected("无权限");
-          const tabBarStore = useTabBerStore();
+          const tabBarStore = useTabBarStore();
           const userStore = useUserStore();
           uni.showToast({
             title: "登录信息已失效，请重新登录",
@@ -307,7 +307,7 @@ export async function downloadFile(options = {}) {
         } else {
           // refreshToken过期，重新登录
           rejected("无权限");
-          const tabBarStore = useTabBerStore();
+          const tabBarStore = useTabBarStore();
           const userStore = useUserStore();
           uni.showToast({
             title: "登录信息已失效，请重新登录",

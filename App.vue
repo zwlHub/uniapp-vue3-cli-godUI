@@ -19,4 +19,6 @@ export default {
 /* 主题 */
 @import "~@/common/style/dark.scss";
 @import "~@/common/style/light.scss";
+@import "~@/common/style/blue.scss";
+@import "~@/common/style/red.scss";
 </style>

@@ -1,15 +1,13 @@
 //黑夜模式
 .theme-dark-page {
-    background-color: #333 !important;
+    background-color: #000;
 
-    .theme-color {
-        color: #FFF !important;
+    .theme-card {
+        background-color: #333;
+        color: #fff;
     }
-    .theme-block {
-        background-color: #fff !important;
-        
-        .color {
-            color: #000 !important;
-        }
+
+    .theme-text-color {
+        color: #000;
     }
 }

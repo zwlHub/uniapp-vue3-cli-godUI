@@ -25,11 +25,21 @@ const comData = [
 			},
 			{
 			    comTitle: '列表筛选',
-			    comIcon: 'icon-daohang',
+			    comIcon: 'icon-liebiao1',
 			    url: '/pages/list/listFilter/listFilter'
 			}
         ]
-    }
+    },
+	{
+		modTitle: '展示组件',
+		modData: [
+			{
+				comTitle: '动态主题',
+				comIcon: 'icon-zhuti',
+				url: '/pages/theme/theme'
+			}
+		]
+	}
 ]
 
 export {
