@@ -36,6 +36,9 @@
   &::v-deep .u-tabbar__content {
     background: #000 !important;
   }
+  &::v-deep .u-tabbar__placeholder {
+    background: #000 !important;
+  }
 }
 	.icon-style {
 		width: 34rpx;

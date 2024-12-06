@@ -1,5 +1,5 @@
 <template>
-  <view>
+  <view class="container">
     模板
   </view>
   <yuni-tabbar :current="2"></yuni-tabbar>
@@ -14,5 +14,15 @@ onLoad(() => {
 
 
 <style scoped lang="scss">
-
+.container {
+  height: calc(100% - 50px);
+}
+</style>
+<style>
+uni-page-body,
+page {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
 </style>

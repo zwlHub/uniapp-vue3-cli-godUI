@@ -47,6 +47,7 @@ onLoad(() => {
 <style scoped lang="scss">
 .home-container {
   width: 100%;
+  height: calc(100% - 50px);
   padding: 10rpx 20rpx;
   box-sizing: border-box;
   display: flex;

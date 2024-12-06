@@ -88,8 +88,8 @@ const changeTheme = (theme) => {
 <style lang="scss" scoped>
 .container {
   padding: 20rpx;
-  height: calc(100% - 100rpx);
-  height: calc(100% - 100rpx);
+  //自定义tabbar的占位元素为50px
+  height: calc(100% - 50px);
   background-size: 100% 663rpx;
   background-repeat: no-repeat;
   display: flex;
