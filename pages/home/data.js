@@ -39,6 +39,21 @@ const comData = [
 				url: '/pages/theme/theme'
 			}
 		]
+	},
+	{
+		modTitle: '表单组件',
+		modData: [
+			{
+				comTitle: '组织架构',
+				comIcon: 'icon-liebiao1',
+				url: '/pages/theme/theme'
+			},
+			{
+				comTitle: '树',
+				comIcon: 'icon-liebiao1',
+				url: '/pages/list/tree/tree'
+			}
+		]
 	}
 ]
 

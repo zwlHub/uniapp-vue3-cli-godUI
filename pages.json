@@ -38,10 +38,9 @@
       }
     },
     {
-      "path" : "pages/theme/theme",
-      "style" :
-      {
-        "navigationBarTitleText" : "主题配置",
+      "path": "pages/theme/theme",
+      "style": {
+        "navigationBarTitleText": "主题配置",
         "navigationBarBackgroundColor": "#FFF",
         "navigationStyle": "custom",
         "enablePullDownRefresh": false
@@ -61,34 +60,36 @@
           }
         },
         {
-        	"path" : "leftnav/leftnav",
-        	"style" : 
-        	{
-        		"navigationBarTitleText" : "侧边栏"
-        	}
+          "path": "leftnav/leftnav",
+          "style": {
+            "navigationBarTitleText": "侧边栏"
+          }
         },
         {
-        	"path" : "sticky/sticky",
-        	"style" : 
-        	{
-        		"navigationBarTitleText" : "粘性布局"
-        	}
+          "path": "sticky/sticky",
+          "style": {
+            "navigationBarTitleText": "粘性布局"
+          }
         },
         {
-        	"path" : "selectCity/selectCity",
-        	"style" : 
-        	{
-        		"navigationBarTitleText" : "选择城市"
-        	}
+          "path": "selectCity/selectCity",
+          "style": {
+            "navigationBarTitleText": "选择城市"
+          }
         },
         {
-        	"path" : "listFilter/listFilter",
-        	"style" : 
-        	{
-        		"navigationBarTitleText" : "列表筛选"
-        	}
+          "path": "listFilter/listFilter",
+          "style": {
+            "navigationBarTitleText": "列表筛选"
+          }
+        },
+        {
+          "path": "tree/tree",
+          "style": {
+            "navigationBarTitleText": "树",
+            "enablePullDownRefresh": false
+          }
         }
-
       ]
     }
   ],
